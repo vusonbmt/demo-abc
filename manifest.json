@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Grok-2 Real-Time Translator",
+  "version": "1.0",
+  "description": "Real-time Japanese to English translation using Grok-2 API",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.x.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

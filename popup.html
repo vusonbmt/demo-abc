@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grok-2 Translator Settings</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Grok-2 Translator Settings</h1>
+  
+  <div class="form-group">
+    <label for="apiKey">API Key:</label>
+    <input type="password" id="apiKey" placeholder="Enter your Grok-2 API key">
+  </div>
+  
+  <div class="form-group">
+    <label>Translation Mode:</label>
+    <div class="radio-group">
+      <input type="radio" id="modeAuto" name="translationMode" value="auto" checked>
+      <label for="modeAuto">Auto-detect Japanese</label>
+    </div>
+    <div class="radio-group">
+      <input type="radio" id="modeManual" name="translationMode" value="manual">
+      <label for="modeManual">Manual (selection only)</label>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="translationDelay">Translation Delay (ms):</label>
+    <input type="number" id="translationDelay" min="100" max="2000" value="500">
+  </div>
+  
+  <button id="saveButton">Save Settings</button>
+  <p id="status"></p>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
