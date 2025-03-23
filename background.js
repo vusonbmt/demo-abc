@@ -1,4 +1,4 @@
-let API_KEY = 'xai-mASNoFJeAXZgSUvx54ngA6Ga0fIc6EbyxvOdQNXiYJJgNNnjSq5wsYKcJrwqiBwe0wbPOd3WJGApNyrO';
+let API_KEY = '';
 
 chrome.storage.sync.get(['apiKey'], function(result) {
   API_KEY = result.apiKey;
